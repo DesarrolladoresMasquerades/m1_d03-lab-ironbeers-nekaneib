@@ -4,6 +4,8 @@ const hbs = require('hbs');
 const path = require('path');
 const PunkAPIWrapper = require('punkapi-javascript-wrapper');
 
+hbs.registerPartials(path.join(__dirname, '/views/partials'))
+
 const app = express();
 const punkAPI = new PunkAPIWrapper();
 
